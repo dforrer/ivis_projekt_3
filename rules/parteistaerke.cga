@@ -22,12 +22,13 @@ attr Lega = 0
 attr MCR = 0
 attr Uebrige = 0
 
+
 colorize(c)-->
 	color(c)
-	
+
 Form-->
-	s('1,'100,'1) 
-	 split(x){ 	~FDP : colorize("#FFFF00") |
+	alignScopeToAxes()
+	split(x){ 	~FDP : colorize("#FFFF00") |
              	~CVP : colorize("#FF8C00") |
              	~SP  : colorize("#FF0000") |
                	~SVP : colorize("#006400") |
