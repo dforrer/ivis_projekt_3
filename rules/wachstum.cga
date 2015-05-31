@@ -1,0 +1,27 @@
+/**
+ * File:    wachstum.cga
+ * Created: 24 Nov 2014 10:14:22 GMT
+ * Author:  sschubiger
+ */
+
+version "2015.0"
+
+const YEARS = 2035 - 2010
+attr scaleh = 1000
+attr scalev = 1000
+attr POPULATION(idx) = 0
+attr AREA_HA2= 0
+
+Init-->
+	color(colorRamp("spectrum",rand()))
+	[State.]
+	center(xz)
+	t('0.5,0,'0.5)
+	rotate(abs, world, 0, 0, 0) 
+	t(scaleh*-YEARS/2,0,0)
+	s(scaleh*YEARS, 0, scaleh*4)
+	i("quad.obj")
+	split(x) {scaleh:Bar(split.index)}*
+		
+Bar(idx)-->
+	extrude(y,scalev*POPULATION(idx) / AREA_HA2)
