@@ -27,9 +27,7 @@ colorize(c)-->
 	color(c)
 
 Form-->
-	color("#ffffff")
-	offset(-1500,inside)
-	extrude(5000)
+	offset(-500,inside)
 	alignScopeToAxes()
 	split(x){ 	~FDP : colorize("#FFFF00") |
              	~CVP : colorize("#FF8C00") |
@@ -47,7 +45,7 @@ Form-->
                	~EDU  : colorize("#1E90FF") |
                	~Lega  : colorize("#006400") |
                	~MCR  : colorize("#006400") |
-               	~Uebrige  : colorize("#FFFFFF")        	
+               	~Uebrige  : colorize("#00008B")        	
              }
 
 
