@@ -6,14 +6,17 @@ Created on Nov 24, 2014
 from scripting import *
 
 import csv
+import os
 
 # get a CityEngine instance
 ce = CE()
 
 states = {}
 
+basedir = os.path.dirname(os.path.realpath(__file__))
+
 if __name__ == '__main__':
-    f = open('/Users/Daniel/Documents/CityEngine/parteien_kantone.csv', 'rt')
+    f = open(basedir + '/../data/parteien_kantone.csv', 'rt')
     try:
         reader = csv.reader(f)
         for row in reader:
