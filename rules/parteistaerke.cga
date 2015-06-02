@@ -29,24 +29,21 @@ colorize(c)-->
 Form-->
 	offset(-500,inside)
 	alignScopeToAxes()
-	split(x){ 	~FDP : colorize("#FFFF00") |
-             	~CVP : colorize("#FF8C00") |
-             	~SP  : colorize("#FF0000") |
-               	~SVP : colorize("#006400") |
-             	~LPS : colorize("#FFFF00") |
-               	~EVP  : colorize("#1E90FF") |
-               	~CSP  : colorize("#FF8C00") |
-               	~GLP  : colorize("#BDB76B") |
-               	~BDP  : colorize("#000000") |
-               	~PdA  : colorize("#ff0000") |
-               	~GPS  : colorize("#00ff00") |
+	split(x){ 	~PdA  : colorize("#ff0000") |
                	~Sol  : colorize("#ff0000") |
-               	~SD  : colorize("#A52A2A") |
-               	~EDU  : colorize("#1E90FF") |
-               	~Lega  : colorize("#006400") |
+               	~GPS  : colorize("#00ff00") |
+               	~SP  : colorize("#FF0000") |
+               	~EVP  : colorize("#1E90FF") |
+               	~GLP  : colorize("#BDB76B") |
+             	~CSP  : colorize("#FF8C00") |
+               	~CVP : colorize("#FF8C00") |
+             	~EDU  : colorize("#1E90FF") |
+               	~LPS : colorize("#FFFF00") |
+               	~FDP : colorize("#FFFF00") |
+               	~BDP  : colorize("#000000") |
+             	~SVP : colorize("#006400") |
                	~MCR  : colorize("#006400") |
+               	~Lega  : colorize("#8B008B") |
+               	~SD  : colorize("#A52A2A") |
                	~Uebrige  : colorize("#00008B")        	
              }
-
-
-style BorderStyle
